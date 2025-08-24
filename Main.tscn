@@ -16509,10 +16509,8 @@ position = Vector2(1020, 259)
 
 [node name="Enemy3" parent="." instance=ExtResource("4_cm0pq")]
 position = Vector2(274, -421)
-script = null
 
 [node name="Enemy4" parent="." instance=ExtResource("4_cm0pq")]
 position = Vector2(882, -1869)
-script = null
 
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
