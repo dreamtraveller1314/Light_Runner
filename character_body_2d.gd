@@ -2,8 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
-
-
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -31,3 +30,7 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.animation = ("new_animation")
 
 	move_and_slide()
+	
+func reset_position():
+	position = Vector2(0,0)
+	pass
